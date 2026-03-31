@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Délices d’Espagne – Synerfood Gourmet</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    color: #333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1100px;
+    margin: auto;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+header img {
+    max-width: 140px;
+}
+
+h1 {
+    color: #952456;
+}
+
+h2 {
+    color: #555;
+    font-weight: normal;
+}
+
+.hero {
+    background: url('hero.jpg') center/cover no-repeat;
+    height: 320px;
+    border-radius: 12px;
+    margin: 30px 0;
+}
+
+.section {
+    margin: 40px 0;
+}
+
+.promise, .about, .testimonials {
+    background: #f8f8f8;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+}
+
+.accordion-header {
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 6px;
+}
+
+.wine { background:#952456; color:white;}
+.oil { background:#779888; color:white;}
+.honey { background:#fbb900; color:black;}
+.canned { background:#8496a8; color:white;}
+.meat { background:#333; color:white;}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background: #fafafa;
+}
+
+.buttons {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.buttons a {
+    display: inline-block;
+    margin: 10px;
+    padding: 12px 20px;
+    background:#952456;
+    color:white;
+    text-decoration:none;
+    border-radius:6px;
+}
+
+.testimonial {
+    margin-bottom: 15px;
+    font-style: italic;
+}
+
+footer {
+    background:#952456;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+</style>
+
+<script>
+function toggleAccordion(el){
+    const content = el.nextElementSibling;
+    content.style.display = content.style.display === "block" ? "none" : "block";
+}
+</script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+<header>
+<img src="logo.png" alt="Logo Synerfood Gourmet">
+<h1>Délices d’Espagne</h1>
+<h2>par Synerfood Gourmet</h2>
+<p><strong>L'épicerie fine espagnole s'invite à votre table</strong></p>
+<p>Des terroirs d'Espagne à votre assiette — directement.</p>
+</header>
+
+<div class="hero"></div>
+
+<section class="section promise">
+<p>
+Synerfood Gourmet sélectionne ce que l’Espagne produit de meilleur : des produits d’exception,
+issus de producteurs indépendants, choisis pour leur exigence et leur authenticité.
+</p>
+</section>
+
+<section class="section about">
+<h3>Une sélection portée par l’expérience terrain</h3>
+<p>
+Pendant plus de 15 ans en Espagne, Bernard Larrieu a construit un réseau direct de producteurs engagés.
+Chaque produit proposé est le fruit de rencontres, de dégustations et d’un choix exigeant.
+</p>
+<p>
+Ici, pas de catalogue standardisé : uniquement des produits choisis pour leur goût,
+leur origine et leur capacité à créer une vraie expérience.
+</p>
+</section>
+
+<section class="section">
+
+<div class="accordion-item">
+<div class="accordion-header wine" onclick="toggleAccordion(this)">
+🍷 Vins d’appellation & nature
+</div>
+<div class="accordion-content">
+Rioja, Cigales et grandes appellations. Des vins sélectionnés pour leur équilibre, leur caractère et leur authenticité.
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header oil" onclick="toggleAccordion(this)">
+🫒 Huiles d’olive extra vierge
+</div>
+<div class="accordion-content">
+Extraction à froid, variétés sélectionnées, dont bio. Des huiles reconnues pour leur finesse et leur régularité.
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header honey" onclick="toggleAccordion(this)">
+🍯 Produits de la ruche & douceurs
+</div>
+<div class="accordion-content">
+Miels bio mono-fleurs, pollen, propolis et turróns artisanaux aux saveurs authentiques.
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header canned" onclick="toggleAccordion(this)">
+🥫 Conserves végétales & thon blanc
+</div>
+<div class="accordion-content">
+Produits artisanaux : piquillos AOP, sauces bio, thon blanc pêché à la ligne.
+</div>
+</div>
+
+<div class="accordion-item">
+<div class="accordion-header meat" onclick="toggleAccordion(this)">
+🥩 Salaisons ibériques
+</div>
+<div class="accordion-content">
+Produits issus de porcs ibériques sélectionnés, séchés selon un savoir-faire traditionnel.
+</div>
+</div>
+
+</section>
+
+<section class="section testimonials">
+<h3>Ils en parlent</h3>
+
+<p class="testimonial">“Des produits d’une qualité remarquable, notamment les huiles d’olive.”</p>
+
+<p class="testimonial">“Chaque visite est un plaisir. Produits excellents et conseils toujours pertinents.”</p>
+
+<p class="testimonial">“Une vraie découverte des terroirs espagnols, avec des produits authentiques.”</p>
+
+</section>
+
+<section class="buttons">
+<a href="plaquette.pdf" target="_blank">📄 Découvrir la plaquette</a>
+<a href="tarifs.xlsx" target="_blank">💰 Voir les tarifs</a>
+<a href="processcommande.pdf" target="_blank">🛒 Commander</a>
+</section>
+
+</div>
+
+<footer>
+<p><strong>Contact</strong></p>
+<p>Bernard Larrieu</p>
+<p>gourmet@synerfood.com</p>
+<p>+33 (0)7 66 65 49 67</p>
+<p>Avenue de Lomagne - 32310 Saint-Puy</p>
+</footer>
+
+</body>
+</html>
