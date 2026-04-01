@@ -17,7 +17,7 @@
       --bordeaux-lt:#c4416e;
       --gold:       #fbb900;
       --olive:      #779888;
-      --slate:      #8496a8;
+      --slate:      #526572;
       --cream:      #faf7f2;
       --warm-white: #fffef9;
       --ink:        #1a1410;
@@ -100,6 +100,7 @@
       font-weight: 300;
       line-height: 1.05;
       color: var(--warm-white);
+	  margin-bottom: 1.2rem;
       max-width: 14ch;
       opacity: 0;
       animation: fadeUp .9s var(--ease-out) .35s forwards;
@@ -112,7 +113,7 @@
     .hero__sub {
       margin-top: 1.5rem;
       font-family: var(--font-body);
-      font-size: clamp(1rem, 1.8vw, 1.2rem);
+      font-size: clamp(1.2rem, 1.8vw, 1.2rem);
       font-weight: 300;
       color: rgba(255,255,255,.78);
       max-width: 44ch;
@@ -151,21 +152,18 @@
     .hero__logo {
       position: absolute;
       top: 2.5rem;
-      left: clamp(1.5rem, 6vw, 5rem);
+      left: clamp(3rem, 6vw, 5rem);
       z-index: 3;
-      opacity: 0;
-      animation: no;
     }
     .hero__logo img {
-      height: clamp(48px, 7vw, 150px);
-      filter: no;
+      height: clamp(48px, 6vw, 70px);
     }
 
     /* ============================================================
        PROMISE STRIP
     ============================================================ */
     .promise {
-      background: var(--bordeaux);
+      background: var(--bordeaux-dk);
       color: white;
       padding: clamp(3rem, 6vw, 5rem) clamp(1.5rem, 8vw, 7rem);
     }
@@ -477,7 +475,7 @@
     ============================================================ */
     .downloads {
       padding: clamp(4rem, 7vw, 6rem) clamp(1.5rem, 8vw, 7rem);
-      background: var(--ink);
+      background: var(--slate);
     }
     .downloads__inner {
       max-width: 1200px;
@@ -584,22 +582,22 @@
     .footer__brand img {
       height: 60px;
       filter: no;
-      opacity: .8;
+      opacity: .9;
       margin-bottom: 1rem;
     }
     .footer__brand p {
-      font-size: .8rem;
+      font-size: .9rem;
       font-weight: 300;
       line-height: 1.6;
       opacity: .55;
     }
     .footer__contact h4 {
       font-family: var(--font-body);
-      font-size: .68rem;
+      font-size: .90rem;
       letter-spacing: .18em;
       text-transform: uppercase;
       font-weight: 500;
-      opacity: .5;
+      opacity: .4;
       margin-bottom: 1rem;
     }
     .footer__contact a {
@@ -832,7 +830,7 @@
       </h2>
       <p>
         Synerfood Gourmet sélectionne ce que l'Espagne produit de meilleur&nbsp;: 
-        des produits d'exception, sourcés directement auprès des producteurs, 
+        des produits authentiques, sourcés directement auprès des producteurs, 
         disponibles toute l'année pour composer des menus qui étonnent et fidélisent.
       </p>
     </div>
@@ -868,7 +866,7 @@
 ============================================================ -->
 <section class="products" aria-label="Nos familles de produits" id="produits">
   <div class="section-header">
-    <h2>Cinq familles de produits <em>d'exception</em></h2>
+    <h2>Cinq familles de produits <em>remarquables</em></h2>
   </div>
 
   <div class="accordion" role="list">
@@ -1162,7 +1160,7 @@
       </a>
 
       <a href="tarifs.xlsx" class="btn-download" download aria-label="Télécharger le tarif 2026">
-        <span class="btn-download__icon btn-download__icon--xls">XLS</span>
+        <span class="btn-download__icon btn-download__icon--xls">XLSX</span>
         <span class="btn-download__text">
           <strong>Tarif actualisé au 01/01/2026</strong>
           <span>Grille tarifaire complète</span>
@@ -1215,7 +1213,7 @@
       </address>
     </div>
     <div class="footer__copy">
-      <p style="font-family:'Cormorant Garamond',serif;font-size:1.1rem;font-weight:300;opacity:.5;margin-bottom:.8rem;font-style:italic;">
+      <p style="font-family:'Cormorant Garamond',serif;font-size:1.3rem;font-weight:500;opacity:.8;margin-bottom:.8rem;font-style:italic;">
         Des terroirs d'Espagne à votre assiette.
       </p>
       <p>Conception graphique&nbsp;: C. Rochas design profiling</p>
